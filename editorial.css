@@ -9,3 +9,12 @@ body{font-size:18px;line-height:1.6}.site-header{height:114px}.site-header nav{f
 .button{max-width:100%}.button>span{flex-shrink:0}.case-hero .button{white-space:normal;text-align:left}.case-content,.hero-copy,.exhibit{min-width:0}
 @media(min-width:761px) and (max-width:950px){.home-page .hero{grid-template-columns:1fr;gap:38px;padding-block:40px 55px}.hero h1{font-size:72px;max-width:700px}.hero-copy>p{max-width:600px}.exhibit{width:100%;max-width:620px;justify-self:start}}
 .stat-row{grid-template-columns:repeat(3,minmax(0,1fr))}.stat-row>div{min-width:0}@media(max-width:360px){.stat-row strong{font-size:23px}}
+
+/* Keep the portrait and biography readable on phones and smaller tablets. */
+.about-copy{min-width:0}
+@media(max-width:950px){
+  .about-section{grid-template-columns:minmax(0,1fr);gap:32px;align-items:start}
+  .about-art.portrait{width:100%;max-width:440px;justify-self:start;aspect-ratio:1/1.12}
+  .about-copy{width:100%}
+  .portrait>figcaption{flex-wrap:wrap;gap:4px 16px}
+}
