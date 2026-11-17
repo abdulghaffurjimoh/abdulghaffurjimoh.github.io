@@ -1,0 +1,26 @@
+Credit invoice,Source row,Credit time,Stock code,Customer ID,Units credited,Unit price GBP,Credit GBP,Candidate sale,Sale source row,Minutes after sale,Candidate count,Next step
+C581484,540424,2011-12-09 09:27,23843,16446,80995,2.08,168469.6,581483,540423,12.0,1,Compare the sale and credit documents; confirm whether this reverses an order.
+C541433,61626,2011-01-18 10:17,23166,12346,74215,1.04,77183.6,541431,61621,16.0,1,Compare the sale and credit documents; confirm whether this reverses an order.
+C556445,222683,2011-06-10 15:31,M,15098,1,38970.0,38970.0,,,,0,Check the fee/adjustment document and accounting treatment.
+C580605,524604,2011-12-05 11:36,AMAZONFEE,,1,17836.46,17836.46,,,,0,Check the fee/adjustment document and accounting treatment.
+C540117,43704,2011-01-05 09:55,AMAZONFEE,,1,16888.02,16888.02,,,,0,Check the fee/adjustment document and accounting treatment.
+C540118,43705,2011-01-05 09:57,AMAZONFEE,,1,16453.71,16453.71,,,,0,Check the fee/adjustment document and accounting treatment.
+C537630,15018,2010-12-07 15:04,AMAZONFEE,,1,13541.33,13541.33,,,,0,Check the fee/adjustment document and accounting treatment.
+C537651,16358,2010-12-07 15:49,AMAZONFEE,,1,13541.33,13541.33,,,,0,Check the fee/adjustment document and accounting treatment.
+C537644,16234,2010-12-07 15:34,AMAZONFEE,,1,13474.79,13474.79,,,,0,Check the fee/adjustment document and accounting treatment.
+C580604,524603,2011-12-05 11:35,AMAZONFEE,,1,11586.5,11586.5,,,,0,Check the fee/adjustment document and accounting treatment.
+C573079,422377,2011-10-27 14:15,M,12536,2,4161.06,8322.12,,,,0,Check the fee/adjustment document and accounting treatment.
+C574902,446535,2011-11-07 15:21,AMAZONFEE,,1,8286.22,8286.22,,,,0,Check the fee/adjustment document and accounting treatment.
+C551685,173279,2011-05-03 12:51,POST,16029,1,8142.75,8142.75,,,,0,Check the fee/adjustment document and accounting treatment.
+C566899,342637,2011-09-15 13:53,AMAZONFEE,,1,7427.97,7427.97,,,,0,Check the fee/adjustment document and accounting treatment.
+C553355,191388,2011-05-16 13:58,AMAZONFEE,,1,7006.83,7006.83,,,,0,Check the fee/adjustment document and accounting treatment.
+C551699,173393,2011-05-03 14:12,M,16029,1,6930.0,6930.0,,,,0,Check the fee/adjustment document and accounting treatment.
+C562086,287152,2011-08-02 12:27,AMAZONFEE,,1,6721.37,6721.37,,,,0,Check the fee/adjustment document and accounting treatment.
+C537652,16359,2010-12-07 15:51,AMAZONFEE,,1,6706.71,6706.71,,,,0,Check the fee/adjustment document and accounting treatment.
+C564341,312248,2011-08-24 14:53,AMAZONFEE,,1,6662.51,6662.51,,,,0,Check the fee/adjustment document and accounting treatment.
+C550456,160147,2011-04-18 13:08,21108,15749,3114,2.1,6539.4,540815,52713,139693.0,1,Compare the sale and credit documents; confirm whether this reverses an order.
+C559917,262416,2011-07-13 15:21,AMAZONFEE,,1,6497.47,6497.47,,,,0,Check the fee/adjustment document and accounting treatment.
+C573549,429250,2011-10-31 13:23,AMAZONFEE,,1,5942.57,5942.57,,,,0,Check the fee/adjustment document and accounting treatment.
+C570025,383497,2011-10-07 10:29,AMAZONFEE,,1,5942.57,5942.57,,,,0,Check the fee/adjustment document and accounting treatment.
+C574897,446436,2011-11-07 15:03,AMAZONFEE,,1,5877.18,5877.18,,,,0,Check the fee/adjustment document and accounting treatment.
+C553354,191387,2011-05-16 13:54,AMAZONFEE,,1,5876.4,5876.4,,,,0,Check the fee/adjustment document and accounting treatment.
