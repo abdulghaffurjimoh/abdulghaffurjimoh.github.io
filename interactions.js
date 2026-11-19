@@ -1,5 +1,39 @@
 (() => {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const header = document.querySelector('.site-header');
+  const toggle = header?.querySelector('.menu-toggle');
+  const nav = header?.querySelector('#primary-navigation');
+  if (toggle && nav) {
+    const mobile = matchMedia('(max-width: 760px)');
+    const setMenu = (open, restoreFocus = false) => {
+      header.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.querySelector('.menu-label').textContent = open ? 'Close' : 'Menu';
+      if (restoreFocus) toggle.focus();
+    };
+    header.classList.add('navigation-ready');
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('click', event => {
+      if (event.target.closest('a') && mobile.matches) setMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setMenu(false, true);
+    });
+    document.addEventListener('click', event => {
+      if (!header.contains(event.target) && toggle.getAttribute('aria-expanded') === 'true') setMenu(false);
+    });
+    header.addEventListener('focusout', () => {
+      requestAnimationFrame(() => {
+        if (!header.contains(document.activeElement)) setMenu(false);
+      });
+    });
+    mobile.addEventListener('change', () => {
+      const focused = document.activeElement;
+      setMenu(false);
+      if (mobile.matches && nav.contains(focused)) toggle.focus();
+      if (!mobile.matches && focused === toggle) header.querySelector('.brand').focus();
+    });
+  }
   // Announce actions accurately: a download click is a request, not proof of completion.
   const status = document.createElement('p');
   status.className = 'interaction-status';
@@ -54,8 +88,9 @@
     let market='All';
     function update(){
       const i=Number(slider.value),row=data[market][i];
-      label.textContent=row[0]+(i===12?' · partial':''); value.textContent=money.format(row[1]);
-      slider.setAttribute('aria-valuetext',`${row[0]}: ${money.format(row[1])}${i===12?', partial month':''}`);
+      const month = new Intl.DateTimeFormat('en-GB',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(row[0]+'-01T00:00:00Z'));
+      label.textContent=month+(i===12?' · partial':''); value.textContent=money.format(row[1]);
+      slider.setAttribute('aria-valuetext',`${month}: ${money.format(row[1])}${i===12?', partial month':''}`);
       chart.querySelectorAll('circle').forEach((dot,index)=>{dot.setAttribute('r',index===i?'6':'3');dot.setAttribute('fill',index===i?'#853D68':'#FFF8EA');});
     }
     slider.addEventListener('input',update);

@@ -11,6 +11,28 @@ if(chart){
   draw('All');document.querySelectorAll('[data-market]').forEach(b=>b.addEventListener('click',()=>draw(b.dataset.market)));
  }).catch(()=>{chart.innerHTML='<p class="no-js-note">Explore the full sales trend in the downloadable Excel workbook.</p>';document.querySelectorAll('[data-market]').forEach(b=>b.disabled=true);});
 }
-const caseChart=document.getElementById('case-chart');
-if(caseChart){fetch('data.json').then(r=>r.json()).then(data=>{const rows=data.All,w=Math.max(340,caseChart.clientWidth),h=310,bottom=270,left=48,top=43,max=1750000,step=(w-left-10)/rows.length;caseChart.innerHTML=`<svg viewBox="0 0 ${w} ${h}" role="presentation">${[0,500000,1000000,1500000].map(v=>{const y=bottom-v/max*(bottom-top);return `<line x1="${left}" x2="${w}" y1="${y}" y2="${y}" stroke="#dfd0d8" stroke-dasharray="3 5"/><text x="${left-8}" y="${y+4}" text-anchor="end" font-family="DM Sans,Arial,sans-serif" font-size="11" fill="#301828">£${(v/1e6).toFixed(1)}m</text>`}).join('')}${rows.map((r,i)=>{const barH=r[1]/max*(bottom-top),x=left+i*step+6,barW=Math.max(8,step-12);return `<rect x="${x}" y="${bottom-barH}" width="${barW}" height="${barH}" fill="${i===11?'#853D68':'#B7A3B0'}" rx="2"><title>${r[0]}: £${r[1].toLocaleString('en-GB')}${i===12?' (partial month)':''}</title></rect><text x="${x+barW/2}" y="${bottom+22}" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-size="11" fill="#301828">${['Dec ’10','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec*'][i]}</text>${i===11?`<text x="${x+barW/2}" y="${bottom-barH-18}" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-size="14" font-weight="600" fill="#853D68">£1.50m</text>`:''}`}).join('')}</svg>`;}).catch(()=>{caseChart.innerHTML='<p>Open the Excel workbook to explore the monthly sales figures.</p>'});}
-
+const caseChart = document.getElementById('case-chart');
+if (caseChart) {
+  caseChart.tabIndex = 0;
+  fetch('data.json').then(r => { if (!r.ok) throw Error('data'); return r.json(); }).then(data => {
+    const rows = data.All;
+    const money = new Intl.NumberFormat('en-GB', {style:'currency', currency:'GBP', maximumFractionDigits:2});
+    const month = value => new Intl.DateTimeFormat('en-GB', {month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(value+'-01T00:00:00Z'));
+    const table = document.createElement('details');
+    table.className = 'chart-values';
+    table.innerHTML = `<summary>View monthly sales figures</summary><div class="table-scroll" tabindex="0" role="region" aria-label="Monthly recorded sales figures"><table class="case-table"><caption>Recorded sales in GBP; December 2011 covers 1–9 December only.</caption><thead><tr><th scope="col">Month</th><th scope="col">Sales</th></tr></thead><tbody>${rows.map((r,i) => `<tr><th scope="row">${month(r[0])}${i===12?' (partial)':''}</th><td>${money.format(r[1])}</td></tr>`).join('')}</tbody></table></div>`;
+    caseChart.parentElement.append(table);
+    function drawCaseChart() {
+      const w = Math.max(660, caseChart.clientWidth), h = 310, bottom = 265, left = 58, top = 40, max = 1750000, step = (w-left-10)/rows.length;
+      caseChart.innerHTML = `<svg viewBox="0 0 ${w} ${h}" role="presentation">${[0,500000,1000000,1500000].map(v => {
+        const y = bottom-v/max*(bottom-top);
+        return `<line x1="${left}" x2="${w}" y1="${y}" y2="${y}" stroke="#dfd0d8" stroke-dasharray="3 5"/><text x="${left-8}" y="${y+4}" text-anchor="end" font-family="DM Sans,Arial,sans-serif" font-size="14" fill="#301828">£${(v/1e6).toFixed(1)}m</text>`;
+      }).join('')}${rows.map((r,i) => {
+        const barH = r[1]/max*(bottom-top), x = left+i*step+6, barW = Math.max(8,step-12);
+        return `<rect x="${x}" y="${bottom-barH}" width="${barW}" height="${barH}" fill="${i===11?'#853D68':'#B7A3B0'}" rx="2"><title>${month(r[0])}: ${money.format(r[1])}${i===12?' (partial month)':''}</title></rect><text x="${x+barW/2}" y="${bottom+24}" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-size="13" fill="#301828">${['Dec ’10','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec*'][i]}</text>${i===11?`<text x="${x+barW/2}" y="${bottom-barH-18}" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-size="16" font-weight="600" fill="#853D68">£1.50m</text>`:''}`;
+      }).join('')}</svg>`;
+    }
+    drawCaseChart();
+    if ('ResizeObserver' in window) new ResizeObserver(drawCaseChart).observe(caseChart);
+  }).catch(() => { caseChart.innerHTML = '<p>Open the Excel workbook to explore the monthly sales figures.</p>'; });
+}

@@ -31,5 +31,78 @@ a,button,summary{-webkit-tap-highlight-color:transparent;touch-action:manipulati
 details summary{cursor:pointer;min-height:44px;transition:color .18s}
 details summary:hover{color:var(--mulberry)}
 details[open]{border-color:var(--mulberry)}
-@media(max-width:760px){.site-header{height:auto;min-height:114px;flex-wrap:wrap;padding-block:18px;gap:12px}.site-header nav{display:flex;order:3;flex-basis:100%;gap:28px;font-size:14px}.site-header nav a{min-height:44px;display:inline-flex;align-items:center}.nav-contact{margin-left:auto}.contact-actions{width:100%}}
+/* The navigation stays usable without JavaScript; enhancement adds a disclosure. */
+.menu-toggle,.site-header nav .menu-contact{display:none}
+.menu-toggle{align-items:center;justify-content:center;gap:12px;min-width:100px;min-height:46px;padding:10px 14px;background:transparent;color:inherit;border:1px solid var(--mauve);border-radius:8px;font:500 15px var(--font);cursor:pointer}
+.menu-toggle:hover{background:#853d6818}
+.home-page .menu-toggle:hover{background:#452238}
+.menu-icon{position:relative;display:block;width:18px;height:14px;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor}
+.menu-icon:after{content:'';position:absolute;left:0;right:0;top:5px;border-top:1.5px solid currentColor}
+.menu-open .menu-icon{border:0}
+.menu-open .menu-icon:before,.menu-open .menu-icon:after{content:'';position:absolute;left:0;right:0;top:6px;border-top:1.5px solid currentColor;transform:rotate(45deg)}
+.menu-open .menu-icon:after{transform:rotate(-45deg)}
+.menu-toggle:focus-visible{outline:3px solid var(--mulberry);outline-offset:4px}
+.home-page .menu-toggle:focus-visible{outline-color:var(--oat)}
+.project-deliverables{font-size:16px;line-height:1.6;color:var(--muted);padding-left:20px;margin:22px 0}
+.project-deliverables li{margin:8px 0}
+.project-preview{aspect-ratio:auto;box-shadow:none;transform:none;background:var(--oat)}
+.sales-preview{padding:28px;color:var(--ink)}
+.sales-preview>p{font:400 28px/1.2 'Instrument Serif',Georgia,serif;margin:0 0 30px;max-width:26ch}
+.preview-row{display:grid;grid-template-columns:1fr auto;gap:10px 16px;margin:22px 0;font-size:15px}
+.preview-row strong{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.preview-row i{grid-column:1/-1;display:block;width:var(--bar);height:22px;background:var(--mauve);border-radius:0 3px 3px 0}
+.preview-row.highlight i{background:var(--mulberry)}
+.sales-preview small{font-size:13px;color:var(--muted)}
+.exhibit-top,.exhibit-number>span:first-child,.exhibit-period,.chart-heading,.chart-months,.chart-note,.exhibit-bottom{font-size:13px}
+.live-label{font-size:12px;white-space:nowrap}
+.month-inspector label{font-size:14px;flex-wrap:wrap}
+.month-inspector small{font-size:13px}
+.hero-foot{font-size:13px}
+.project-type,.project-facts dt,.project-tags span,.project-art-caption{font-size:13px}
+.evidence-note,.evidence-heading span:last-child,.article-image figcaption{font-size:14px}
+.large-chart{height:340px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain}
+.large-chart svg{display:block;min-width:660px;height:310px}
+.large-chart:focus-visible,.table-scroll:focus-visible{outline:3px solid var(--mulberry);outline-offset:4px}
+.chart-scroll-hint{display:none;font-size:14px;color:var(--muted);margin:16px 0 0}
+.chart-values{margin-top:18px;border-block:1px solid var(--mauve);padding:12px 0;font-size:15px}
+.chart-values summary{font-weight:500}
+.chart-values .case-table{font-size:15px;min-width:0;margin-top:16px}
+.chart-values caption{font-size:14px}
+.chart-values th,.chart-values td{padding:12px}
+.chart-values tbody th{background:transparent;color:var(--ink);font-weight:400}
+@media(max-width:1050px){.intro-band{flex-wrap:wrap}.intro-band>div{flex-wrap:wrap}.site-header{gap:20px}.site-header nav{gap:24px}}
+@media(max-width:760px){
+  .site-header{height:auto;min-height:90px;flex-wrap:wrap;padding-block:18px;gap:0 12px}
+  .site-header .brand{margin-right:auto}
+  .site-header nav{display:flex;order:3;flex-basis:100%;flex-direction:column;gap:0;font-size:17px;margin-top:16px;border-top:1px solid var(--mauve)}
+  .site-header nav a{min-height:50px;display:flex;align-items:center;padding:12px 4px;border-bottom:1px solid #b7a3b045}
+  .site-header nav a:after{display:none}
+  .site-header nav .menu-contact{display:flex;justify-content:space-between}
+  .site-header>.nav-contact{display:none}
+  .navigation-ready .menu-toggle{display:inline-flex}
+  .navigation-ready nav{display:none}
+  .navigation-ready.menu-open nav{display:flex;animation:nav-enter .18s ease-out}
+  .contact-actions{width:100%}
+  .project-copy h3{font-size:34px;line-height:1.12}
+  .sales-preview{padding:22px 18px}
+  .sales-preview>p{font-size:28px}
+  .project-preview{margin-inline:12px}
+  .project-art-caption{flex-wrap:wrap;padding:20px;font-size:13px}
+  .project-facts{flex-wrap:wrap;gap:20px 28px}
+  .chart-months,.chart-note,.exhibit-bottom,.hero-foot{font-size:13px}
+  .exhibit-bottom{flex-wrap:wrap;gap:12px}
+  .exhibit-top{padding:18px;gap:10px;flex-wrap:wrap}
+  .market-control{flex-wrap:wrap}
+  .market-control button{font-size:13px;min-height:46px;flex:1 1 auto}
+  .chart-scroll-hint{display:block}
+  .case-hero h1{font-size:clamp(40px,10vw,55px);line-height:1.05}
+  .evidence-heading span:last-child,.evidence-note,.stat-row span,.comparison-row{font-size:14px}
+  .stat-row{grid-template-columns:1fr;gap:16px}
+  .stat-row>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+  .stat-row strong{font-size:28px}
+  .stat-row span{text-align:right}
+  .case-nav>a{min-height:44px;display:flex;align-items:center}
+  .site-footer{align-items:flex-start;overflow-wrap:anywhere}
+}
+@keyframes nav-enter{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.project-art:hover .project-preview img{transform:none}.button:hover span,.nav-contact:hover span,.case-link:hover span,.text-link:hover span,.project-art:hover .project-art-top>span:last-child{transform:none}}

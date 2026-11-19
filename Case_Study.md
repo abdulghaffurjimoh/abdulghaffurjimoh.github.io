@@ -1,6 +1,6 @@
-# What sold, and what needs checking?
+# Which products drove sales, and which credits need review?
 
-**Portfolio case study | Prepared for a retail operations audience**
+**Portfolio case study | Intended audience: retail operations teams**
 
 Analysis of 541,909 historical transaction lines to understand sales performance, customer activity and the data-quality issues that affect reporting.
 
