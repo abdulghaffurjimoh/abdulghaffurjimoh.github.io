@@ -1,0 +1,36 @@
+﻿source_row,barcode,field,before,after,rule
+3,00389327,quantity,112g,112 g,Explicit single-pack quantity formatting
+6,8000300132779,quantity,306g,306 g,Explicit single-pack quantity formatting
+7,8715000934720,quantity,397g,397 g,Explicit single-pack quantity formatting
+11,5411188543381,quantity,1 l,1 L,Explicit single-pack quantity formatting
+12,4013159604599,quantity,500g,500 g,Explicit single-pack quantity formatting
+17,5018297006464,quantity,425g,425 g,Explicit single-pack quantity formatting
+22,5018357803804,quantity,410g,410 g,Explicit single-pack quantity formatting
+25,5018357012411,quantity,650g,650 g,Explicit single-pack quantity formatting
+26,5059319039800,quantity,420g,420 g,Explicit single-pack quantity formatting
+29,5059319023618,quantity,330g,330 g,Explicit single-pack quantity formatting
+34,00018166,quantity,330g,330 g,Explicit single-pack quantity formatting
+36,8721317716515,quantity,165g,165 g,Explicit single-pack quantity formatting
+39,5010003052949,quantity,800g,800 g,Explicit single-pack quantity formatting
+47,4069366126096,quantity,300g,300 g,Explicit single-pack quantity formatting
+49,5900334001184,quantity,2L,2 L,Explicit single-pack quantity formatting
+54,8008343880664,quantity,400g,400 g,Explicit single-pack quantity formatting
+60,5010029232370,quantity,850g,850 g,Explicit single-pack quantity formatting
+61,7622202264481,quantity,100g,100 g,Explicit single-pack quantity formatting
+66,5063250537905,quantity,550g,550 g,Explicit single-pack quantity formatting
+67,5901882110014,quantity,70g,70 g,Explicit single-pack quantity formatting
+68,5052675060204,product_name,Rogan Josh  préparation,Rogan Josh préparation,Unicode NFC and whitespace only
+73,5901696011859,quantity,450g,450 g,Explicit single-pack quantity formatting
+75,5449000267412,quantity,"1,25 L",1.25 L,Explicit single-pack quantity formatting
+78,5060560280811,quantity,275g,275 g,Explicit single-pack quantity formatting
+79,0038900015053,quantity,432g,432 g,Explicit single-pack quantity formatting
+84,5000358966497,quantity,500g,500 g,Explicit single-pack quantity formatting
+85,5013499000036,quantity,405g,405 g,Explicit single-pack quantity formatting
+86,5941238010650,quantity,280g,280 g,Explicit single-pack quantity formatting
+88,5059697687150,quantity,100g,100 g,Explicit single-pack quantity formatting
+89,5057545878859,quantity,450g,450 g,Explicit single-pack quantity formatting
+90,5025840000039,quantity,1 l,1 L,Explicit single-pack quantity formatting
+92,4335619399341,quantity,500g,500 g,Explicit single-pack quantity formatting
+95,5060925290752,quantity,500ml,500 ml,Explicit single-pack quantity formatting
+96,5010044010854,quantity,400g,400 g,Explicit single-pack quantity formatting
+100,5059512738685,quantity,500g,500 g,Explicit single-pack quantity formatting

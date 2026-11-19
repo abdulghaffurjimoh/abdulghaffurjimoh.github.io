@@ -74,10 +74,15 @@ details[open]{border-color:var(--mulberry)}
 @media(max-width:760px){
   .site-header{height:auto;min-height:90px;flex-wrap:wrap;padding-block:18px;gap:0 12px}
   .site-header .brand{margin-right:auto}
-  .site-header nav{display:flex;order:3;flex-basis:100%;flex-direction:column;gap:0;font-size:17px;margin-top:16px;border-top:1px solid var(--mauve)}
-  .site-header nav a{min-height:50px;display:flex;align-items:center;padding:12px 4px;border-bottom:1px solid #b7a3b045}
+  .site-header nav{display:flex;order:3;flex-basis:100%;flex-direction:column;gap:4px;font-size:18px;margin-top:18px;padding:10px;border:1px solid #b7a3b04d;border-radius:8px;background:#f4eae2}
+  .home-page .site-header nav{background:#3b2233;border-color:#b7a3b03b}
+  .site-header nav a{min-height:56px;display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border:0;border-radius:5px;font-weight:500;line-height:1.4;transition:background .18s,color .18s}
+  .site-header nav a:not(.menu-contact):before{content:'';order:2;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg);opacity:.55;margin-right:3px}
+  .site-header nav a:hover,.site-header nav a[aria-current]{background:#853d6812;color:var(--cherry)}
+  .home-page .site-header nav a:hover,.home-page .site-header nav a[aria-current]{background:#fff8ea0c;color:var(--oat)}
   .site-header nav a:after{display:none}
-  .site-header nav .menu-contact{display:flex;justify-content:space-between}
+  .site-header nav .menu-contact{display:flex;justify-content:space-between;font-size:14px;min-height:46px;margin-top:8px;border:1px solid #853d6855;background:var(--oat);color:var(--cherry)}
+  .home-page .site-header nav .menu-contact{border-color:#b7a3b05c;background:#fff8ea0a;color:var(--oat)}
   .site-header>.nav-contact{display:none}
   .navigation-ready .menu-toggle{display:inline-flex}
   .navigation-ready nav{display:none}
@@ -104,5 +109,6 @@ details[open]{border-color:var(--mulberry)}
   .case-nav>a{min-height:44px;display:flex;align-items:center}
   .site-footer{align-items:flex-start;overflow-wrap:anywhere}
 }
+@media(max-width:480px){.site-header .brand>span:last-child{display:none}.site-header .brand{gap:0}.site-header .mark{width:46px;height:46px}.site-header{min-height:86px}}
 @keyframes nav-enter{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.project-art:hover .project-preview img{transform:none}.button:hover span,.nav-contact:hover span,.case-link:hover span,.text-link:hover span,.project-art:hover .project-art-top>span:last-child{transform:none}}
