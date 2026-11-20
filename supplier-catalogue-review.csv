@@ -1,0 +1,54 @@
+﻿sku,issue,blocking,source_value,cleaned_value,rule,next_action,source_file,source_row
+FN-BAT-0027-BLA,Duplicate product title,False,Brass Towel Hook,Brass Towel Hook — Black,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,71
+FN-BAT-0027-OAT,Duplicate product title,False,Brass Towel Hook,Brass Towel Hook — Oat,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,29
+FN-BAT-0027-SAG,Duplicate product title,False,Brass Towel Hook,Brass Towel Hook — Sage,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,31
+FN-KIT-0008,Broken image link,True,https://cdn.example.com/broken/fn-kit-0008.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-a.csv,99
+FN-KIT-0012,Invalid barcode,True,5060000000147,,GTIN length and check digit validation failed.,Ask the supplier to confirm the correct EAN/GTIN.,supplier-a.csv,56
+FN-KIT-0016-BLA,Duplicate product title,False,Copper Measuring Cups,Copper Measuring Cups — Black,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,60
+FN-KIT-0016-OAT,Duplicate product title,False,Copper Measuring Cups,Copper Measuring Cups — Oat,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,57
+FN-KIT-0016-SAG,Missing brand,True,,,No brand value was present.,Confirm the brand before import.,supplier-a.csv,89
+FN-KIT-0016-SAG,Duplicate product title,False,Copper Measuring Cups,Copper Measuring Cups — Sage,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,89
+FN-KIT-0171,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-c.csv,44
+FN-KIT-0175,Broken image link,True,https://cdn.example.com/broken/fn-kit-0175.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-c.csv,56
+FN-KIT-0179,Invalid barcode,True,5060000002059,,GTIN length and check digit validation failed.,Ask the supplier to confirm the correct EAN/GTIN.,supplier-c.csv,14
+FN-OUT-0103,Missing brand,True,,,No brand value was present.,Confirm the brand before import.,supplier-b.xlsx,97
+FN-TEX-0092,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-b.xlsx,10
+HO-BAT-0192-LAR,Duplicate product title,False,Heritage Woven Laundry Basket,Heritage Woven Laundry Basket — Large,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-c.csv,46
+HO-BAT-0192-SMA,Duplicate product title,False,Heritage Woven Laundry Basket,Heritage Woven Laundry Basket — Small,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-c.csv,53
+HO-KIT-0006,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-a.csv,5
+HO-KIT-0014,Missing or non-numeric price,True,POA,,POA and blank values are not guessed.,Ask the supplier for a firm GBP price.,supplier-a.csv,16
+HO-KIT-0173,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-c.csv,45
+HO-KIT-0177,Missing category,True,,,No usable category or product type was present.,Confirm the destination category.,supplier-c.csv,20
+HO-OUT-0101,Missing or non-numeric price,True,POA,,POA and blank values are not guessed.,Ask the supplier for a firm GBP price.,supplier-b.xlsx,60
+HO-TEX-0082-BLA,Duplicate product title,False,Cotton Table Runner,Cotton Table Runner — Black,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,8
+HO-TEX-0082-OAT,Duplicate product title,False,Cotton Table Runner,Cotton Table Runner — Oat,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,61
+HO-TEX-0082-SAG,Duplicate product title,False,Cotton Table Runner,Cotton Table Runner — Sage,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,73
+HO-TEX-0090,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-b.xlsx,82
+HO-TEX-0094,Broken image link,True,https://cdn.example.com/broken/ho-tex-0094.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-b.xlsx,54
+HO-TEX-0098,Invalid barcode,True,5060000001168,,GTIN length and check digit validation failed.,Ask the supplier to confirm the correct EAN/GTIN.,supplier-b.xlsx,52
+LW-BAT-0181-LAR,Missing brand,True,,,No brand value was present.,Confirm the brand before import.,supplier-c.csv,7
+LW-BAT-0181-SMA,Missing or non-numeric price,True,POA,,POA and blank values are not guessed.,Ask the supplier for a firm GBP price.,supplier-c.csv,54
+LW-KIT-0007,Broken image link,True,https://cdn.example.com/broken/lw-kit-0007.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-a.csv,28
+LW-KIT-0011,Missing category,True,,,No usable category or product type was present.,Confirm the destination category.,supplier-a.csv,17
+LW-KIT-0015,Missing or non-numeric price,True,POA,,POA and blank values are not guessed.,Ask the supplier for a firm GBP price.,supplier-a.csv,40
+LW-KIT-0170-LAR,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-c.csv,52
+LW-KIT-0170-SMA,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-c.csv,13
+LW-KIT-0174,Broken image link,True,https://cdn.example.com/broken/lw-kit-0174.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-c.csv,34
+LW-KIT-0178,Missing category,True,,,No usable category or product type was present.,Confirm the destination category.,supplier-c.csv,4
+LW-OUT-0102,Missing or non-numeric price,True,POA,,POA and blank values are not guessed.,Ask the supplier for a firm GBP price.,supplier-b.xlsx,21
+LW-TEX-0091,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-b.xlsx,86
+LW-TEX-0099,Invalid barcode,True,5060000001175,,GTIN length and check digit validation failed.,Ask the supplier to confirm the correct EAN/GTIN.,supplier-b.xlsx,14
+NH-KIT-0005-BLA,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-a.csv,51
+NH-KIT-0005-BLA,Duplicate product title,False,Glass Carafe,Glass Carafe — Black,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,51
+NH-KIT-0005-OAT,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-a.csv,46
+NH-KIT-0005-OAT,Duplicate product title,False,Glass Carafe,Glass Carafe — Oat,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,46
+NH-KIT-0005-SAG,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-a.csv,77
+NH-KIT-0005-SAG,Duplicate product title,False,Glass Carafe,Glass Carafe — Sage,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-a.csv,77
+NH-KIT-0172,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-c.csv,8
+NH-LIG-0214-LAR,Duplicate product title,False,Coastal Rattan Table Lamp,Coastal Rattan Table Lamp — Large,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-c.csv,31
+NH-LIG-0214-SMA,Duplicate product title,False,Coastal Rattan Table Lamp,Coastal Rattan Table Lamp — Small,Append the option value (or brand) to make the title unique.,Check the disambiguated title against the supplier description.,supplier-c.csv,19
+NH-TEX-0089,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-b.xlsx,32
+NH-TEX-0093-BLA,Broken image link,True,https://cdn.example.com/broken/nh-tex-0093-bla.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-b.xlsx,93
+NH-TEX-0093-OAT,Broken image link,True,https://cdn.example.com/broken/nh-tex-0093-oat.jpg,,The source URL is a known broken path in this sample.,Request a replacement image URL.,supplier-b.xlsx,53
+NH-TEX-0093-SAG,Missing image link,True,,,No image URL was present.,Request a usable image URL or image file from the supplier.,supplier-b.xlsx,22
+NH-TEX-0097,Missing category,True,,,No usable category or product type was present.,Confirm the destination category.,supplier-b.xlsx,61

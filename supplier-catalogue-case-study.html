@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#FFF8EA">
+<title>Supplier Catalogue Cleanup | Abdul-Ghaffur Jimoh</title>
+<meta name="description" content="A synthetic 250-SKU supplier-file case study: 268 raw rows, 18 duplicates merged, 12 SKU formats and 9 price formats found and handled, with 37 products held for a supplier answer.">
+<link rel="canonical" href="https://abdulghaffurjimoh.github.io/supplier-catalogue-case-study.html">
+<meta name="author" content="Abdul-Ghaffur Jimoh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Three supplier files. 250 SKUs. Every problem accounted for.">
+<meta property="og:description" content="A synthetic supplier-catalogue exercise with a cleaned master, review queue, change log and Shopify, BigCommerce and generic import files.">
+<meta property="og:url" content="https://abdulghaffurjimoh.github.io/supplier-catalogue-case-study.html">
+<meta property="og:image" content="https://abdulghaffurjimoh.github.io/portfolio-social.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Supplier Catalogue Cleanup | Abdul-Ghaffur Jimoh">
+<meta name="twitter:description" content="A synthetic 268-row supplier-file exercise: 250 cleaned SKUs, with every duplicate, missing field and import decision documented.">
+<meta name="twitter:image" content="https://abdulghaffurjimoh.github.io/portfolio-social.jpg">
+<link rel="icon" href="portfolio-mark.svg?v=3" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="editorial.css?v=about-4">
+<link rel="stylesheet" href="interactions.css?v=3">
+<link rel="stylesheet" href="catalogue.css?v=3">
+<link rel="stylesheet" href="supplier-catalogue.css?v=2">
+<script src="app.js?v=2" defer></script>
+<script src="interactions.js?v=3" defer></script>
+<script src="supplier-catalogue.js?v=3" defer></script>
+</head>
+<body class="case-page catalogue-page supplier-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header wrap">
+  <a class="brand" href="index.html" aria-label="Abdul-Ghaffur Jimoh home">
+    <span class="mark">aj<span>.</span></span>
+    <span>Abdul-Ghaffur<br><b>Jimoh</b></span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+    <span class="menu-label">Menu</span><span class="menu-icon" aria-hidden="true"></span>
+  </button>
+  <nav id="primary-navigation" aria-label="Main navigation">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#approach">Approach</a>
+    <a href="index.html#about">About</a>
+    <a class="menu-contact" href="mailto:abdulghaffur.jimoh@gmail.com">Get in touch <span aria-hidden="true">&rarr;</span></a>
+  </nav>
+  <a class="nav-contact" href="mailto:abdulghaffur.jimoh@gmail.com">Let&rsquo;s talk <span aria-hidden="true">&rarr;</span></a>
+</header>
+<main id="main">
+
+<section class="catalogue-hero wrap">
+  <div class="catalogue-intro">
+    <a class="back-link" href="index.html#work">&larr; Selected work</a>
+    <p class="project-type">Supplier data preparation / Synthetic-file case study</p>
+    <h1>Three supplier files.<br>250 SKUs. Every problem accounted for.</h1>
+    <p class="catalogue-deck"><strong>268 raw rows became 250 unique SKUs.</strong> 18 duplicate rows were merged, 12 SKU formats and 9 price formats were found and handled, and 37 products were held for a supplier answer. The output includes a cleaned master, a review queue, a change log and three import files.</p>
+    <a class="button primary" href="Supplier_Catalogue_Review.xlsx" download>Open the review workbook <span aria-hidden="true">&darr;</span></a>
+    <p class="catalogue-tools">Excel workbook &middot; Python preparation &middot; Shopify, BigCommerce and generic CSV</p>
+  </div>
+  <aside class="catalogue-verdict" aria-label="Catalogue cleanup result">
+    <span class="section-label">The handover decision</span>
+    <div class="verdict-main">
+      <strong>210<span> / 250</span></strong>
+      <p>SKUs pass the checks</p>
+    </div>
+    <div class="split-track supplier-split" role="img" aria-label="210 ready, 37 need an answer, 3 discontinued">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="split-labels supplier-split-labels">
+      <p><strong>210</strong> Ready</p>
+      <p><strong>37</strong> Need an answer</p>
+      <p><strong>3</strong> Discontinued</p>
+    </div>
+    <p class="verdict-note">&ldquo;Ready&rdquo; means the row passes the checks in this sample. It is not a live store import or a supplier approval.</p>
+  </aside>
+</section>
+
+<dl class="catalogue-context wrap">
+  <div><dt>Source</dt><dd>Three fictional supplier files</dd></div>
+  <div><dt>Snapshot</dt><dd>19 November 2026</dd></div>
+  <div><dt>Records</dt><dd>250 SKUs from 268 rows</dd></div>
+  <div><dt>Outputs</dt><dd>Shopify, BigCommerce and generic CSV</dd></div>
+</dl>
+
+<section class="supplier-arrived wrap" id="files">
+  <div class="section-heading">
+    <h2>Three files.<br>Three different messes.</h2>
+    <p>The sample deliberately uses the shapes suppliers actually send: a flat CSV, a formatted Excel workbook and a second CSV with different header names.</p>
+  </div>
+  <div class="supplier-files">
+    <article class="supplier-file">
+      <span class="file-tag">CSV &middot; 106 rows</span>
+      <h3>Supplier A</h3>
+      <p>One header row, 12 columns. Mixed SKU punctuation, mixed price styles and six repeated rows.</p>
+      <dl>
+        <div><dt>Unique SKUs</dt><dd>100</dd></div>
+        <div><dt>Duplicate rows</dt><dd>6</dd></div>
+        <div><dt>What it tested</dt><dd>Format variation</dd></div>
+      </dl>
+    </article>
+    <article class="supplier-file">
+      <span class="file-tag">XLSX &middot; 96 rows</span>
+      <h3>Supplier B</h3>
+      <p>Two header rows, merged group headings and 12 columns. The header is not on the first row.</p>
+      <dl>
+        <div><dt>Unique SKUs</dt><dd>90</dd></div>
+        <div><dt>Duplicate rows</dt><dd>6</dd></div>
+        <div><dt>What it tested</dt><dd>Excel layout</dd></div>
+      </dl>
+    </article>
+    <article class="supplier-file">
+      <span class="file-tag">CSV &middot; 66 rows</span>
+      <h3>Supplier C</h3>
+      <p>Lower-case headers and different names: <code>sku</code>, <code>product_title</code> and <code>price_gbp</code>.</p>
+      <dl>
+        <div><dt>Unique SKUs</dt><dd>60</dd></div>
+        <div><dt>Duplicate rows</dt><dd>6</dd></div>
+        <div><dt>What it tested</dt><dd>Column mapping</dd></div>
+      </dl>
+    </article>
+  </div>
+  <p class="supplier-note">Row counts include duplicates. 106 + 96 + 66 = 268 raw rows. Every cleaned record keeps its source file and source row.</p>
+</section>
+
+<section class="catalogue-evidence wrap" id="findings">
+  <div>
+    <span class="section-label">What the checks found</span>
+    <h2>Most rows were usable.<br>The exceptions needed a decision.</h2>
+    <p>18 repeated rows were merged into existing SKUs. 12 SKUs needed punctuation or case fixes. Nine price styles appeared across the files; eight were parsed to two decimal places and the POA rows were held back. The rest of the work was separating safe formatting changes from missing information.</p>
+    <p><strong>37 SKUs were held back.</strong> 21 had an image problem, five had no firm price, four had an invalid barcode, four had no category and three had no brand. None of those values were guessed.</p>
+    <p class="evidence-note">Issue counts are per SKU and describe this sample only. In this sample each blocked SKU has exactly one blocking issue, so the five review groups add up to 37. The full review queue has 53 entries: those 37 blocking cases plus 16 non-blocking duplicate-title checks.</p>
+  </div>
+  <div class="quality-evidence">
+    <h3>What needed attention</h3>
+    <div class="quality-chart" role="img" aria-label="Counts: 18 duplicate rows merged; 14 missing image links; 12 SKU formats normalised; 7 broken image links; 6 duplicate title groups; 5 missing prices; 4 invalid barcodes; 4 missing categories; 3 missing brands.">
+      <div class="quality-bar"><div><span>Duplicate rows merged</span><strong>18<small> rows</small></strong></div><div class="bar-track"><span style="width:100%"></span></div></div>
+      <div class="quality-bar"><div><span>Missing image links</span><strong>14<small> SKUs</small></strong></div><div class="bar-track"><span style="width:78%"></span></div></div>
+      <div class="quality-bar"><div><span>SKU formats normalised</span><strong>12<small> SKUs</small></strong></div><div class="bar-track"><span style="width:67%"></span></div></div>
+      <div class="quality-bar"><div><span>Broken image links</span><strong>7<small> SKUs</small></strong></div><div class="bar-track"><span style="width:39%"></span></div></div>
+      <div class="quality-bar"><div><span>Duplicate title groups</span><strong>6<small> groups</small></strong></div><div class="bar-track"><span style="width:33%"></span></div></div>
+      <div class="quality-bar"><div><span>Missing prices</span><strong>5<small> SKUs</small></strong></div><div class="bar-track"><span style="width:28%"></span></div></div>
+      <div class="quality-bar"><div><span>Invalid barcodes</span><strong>4<small> SKUs</small></strong></div><div class="bar-track"><span style="width:22%"></span></div></div>
+      <div class="quality-bar"><div><span>Missing categories</span><strong>4<small> SKUs</small></strong></div><div class="bar-track"><span style="width:22%"></span></div></div>
+      <div class="quality-bar"><div><span>Missing brands</span><strong>3<small> SKUs</small></strong></div><div class="bar-track"><span style="width:17%"></span></div></div>
+    </div>
+    <p class="chart-caption">Bars are scaled to 18, the largest count in this list, not to a common denominator.</p>
+  </div>
+</section>
+
+<section class="catalogue-decisions wrap" id="decisions">
+  <div class="section-heading">
+    <h2>Three decisions<br>you can inspect.</h2>
+    <p>Each example points to a preserved source row. The workbook keeps the full change log and review queue.</p>
+  </div>
+  <div class="decision-list">
+    <details class="decision-example" open>
+      <summary><span>Normalise the format, not the product</span><span class="decision-tag">Safe formatting</span></summary>
+      <div class="decision-body">
+        <p class="example-product">Source row <span data-example="format-row">67</span> &middot; <span data-example="format-file">supplier-a.csv</span> &middot; SKU <span data-example="format-sku">FN-KIT-0004</span></p>
+        <div class="before-after">
+          <div><span>Source SKU</span><strong data-example="format-source-sku">FN.KIT.0004</strong><span>Source price</span><strong data-example="format-source-price">32,41</strong></div>
+          <div><span>Clean SKU</span><strong data-example="format-clean-sku">FN-KIT-0004</strong><span>Clean price</span><strong data-example="format-clean-price">&pound;32.41</strong></div>
+        </div>
+        <p>The SKU keeps the same letters and numbers; only the punctuation changes. The price keeps the same value; only the currency marker, spacing or decimal separator changes. 12 SKUs and 9 price formats needed a written rule, not a guess.</p>
+      </div>
+    </details>
+    <details class="decision-example">
+      <summary><span>Merge the repeat, keep the evidence</span><span class="decision-tag">Duplicate removal</span></summary>
+      <div class="decision-body">
+        <p class="example-product">SKU <span data-example="duplicate-sku">NH-TEX-0081</span> &middot; Supplier A CSV &middot; source rows <span data-example="duplicate-rows">25 and 97</span></p>
+        <div class="before-after">
+          <div><span>Source rows</span><strong data-example="duplicate-count">2 rows</strong><span>Stored as</span><strong>1 SKU</strong></div>
+          <div><span>Field filled from the repeat</span><strong data-example="duplicate-field">Image URL</strong><span>Rule</span><strong>Keep one row</strong></div>
+        </div>
+        <p>The two rows share a normalised SKU. The kept row already carried the barcode; the repeat supplied the missing image. The cleaned record keeps both values, and the duplicate log records which source row filled the blank. Across the sample, 18 rows were merged into 18 existing SKUs.</p>
+      </div>
+    </details>
+    <details class="decision-example">
+      <summary><span>Stop when the source is missing</span><span class="decision-tag">Held for review</span></summary>
+      <div class="decision-body">
+        <p class="example-product">Two separate records &middot; FN-KIT-0012, source row 56 (barcode) &middot; HO-KIT-0014, source row 16 (price)</p>
+        <div class="before-after review-records">
+          <div><span>Record 1 &middot; invalid barcode</span><strong data-example="review-barcode">5060000000147</strong><span>Cleaned barcode</span><strong>Left blank</strong></div>
+          <div><span>Record 2 &middot; missing price</span><strong data-example="review-price">POA</strong><span>Cleaned price</span><strong>Left blank</strong></div>
+        </div>
+        <p>These are two separate records. The barcode fails the GTIN check digit; the price is &ldquo;price on application&rdquo;, which is not a number. Both records stay in the cleaned master and enter the review queue with a next action; neither value is guessed.</p>
+        <div class="review-split">
+          <div><strong>21</strong><span>image problems</span></div>
+          <div><strong>5</strong><span>missing prices</span></div>
+          <div><strong>4</strong><span>invalid barcodes</span></div>
+          <div><strong>4</strong><span>missing categories</span></div>
+          <div><strong>3</strong><span>missing brands</span></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="catalogue-records wrap" id="records">
+  <div class="section-heading">
+    <h2>Look inside the cleaned catalogue.</h2>
+    <p>Search all 250 SKUs or filter to the rows that need an answer. The product names, brands and prices below are synthetic.</p>
+  </div>
+  <div class="record-toolbar supplier-record-toolbar">
+    <div class="record-search">
+      <label for="supplier-search">Find a SKU, product, brand or source file</label>
+      <input type="search" id="supplier-search" placeholder="Try FN-KIT, towel or supplier-b" autocomplete="off">
+    </div>
+    <div class="record-filters" role="group" aria-label="Filter cleaned records">
+      <button type="button" data-supplier-filter="all" aria-pressed="true">All 250</button>
+      <button type="button" data-supplier-filter="ready" aria-pressed="false">Ready 210</button>
+      <button type="button" data-supplier-filter="review" aria-pressed="false">Needs answer 37</button>
+      <button type="button" data-supplier-filter="discontinued" aria-pressed="false">Discontinued 3</button>
+    </div>
+  </div>
+  <p class="record-count" id="supplier-record-count" role="status" aria-live="polite">Loading 250 records&hellip;</p>
+  <div class="supplier-record-results" id="supplier-results"></div>
+  <button class="records-more" id="supplier-more" type="button" hidden>Show more records</button>
+  <noscript><p class="no-records">Download the standardised CSV to inspect all 250 records.</p></noscript>
+</section>
+
+<section class="supplier-imports wrap" id="imports">
+  <div class="section-heading">
+    <h2>One clean master.<br>Three import shapes.</h2>
+    <p>The same cleaned records are exported for Shopify, BigCommerce and a generic CSV. Platform files exclude discontinued items; review rows stay draft or hidden.</p>
+  </div>
+  <div class="supplier-import-grid">
+    <article>
+      <span class="file-tag">Shopify</span>
+      <h3>247 rows &middot; 217 products</h3>
+      <p>Variant rows share a handle. Product fields appear once; 30 later rows carry only variant data. 186 products are active and 31 are draft because at least one variant still needs an answer.</p>
+      <a href="shopify-import.csv" download>Download the Shopify CSV <span aria-hidden="true">&darr;</span></a>
+    </article>
+    <article>
+      <span class="file-tag">BigCommerce</span>
+      <h3>247 rows &middot; one per SKU</h3>
+      <p>210 rows are visible and 37 are hidden. Hidden rows keep their cleaned values and review status so they can be corrected rather than recreated.</p>
+      <a href="bigcommerce-import.csv" download>Download the BigCommerce CSV <span aria-hidden="true">&darr;</span></a>
+    </article>
+    <article>
+      <span class="file-tag">Generic</span>
+      <h3>250 rows &middot; full audit</h3>
+      <p>Includes all 250 SKUs, including the three discontinued items, with import status, review flags and source references kept for traceability.</p>
+      <a href="generic-import.csv" download>Download the generic CSV <span aria-hidden="true">&darr;</span></a>
+    </article>
+  </div>
+</section>
+
+<section class="catalogue-method wrap" id="method">
+  <div class="section-heading">
+    <h2>Clear rules.<br>Traceable changes.</h2>
+    <p>A useful handover should let someone retrace the work without guessing how the data changed.</p>
+  </div>
+  <div class="method-grid">
+    <article>
+      <h3>Preserve the source.</h3>
+      <p>The three raw files are kept unchanged. Every cleaned record carries its source file, source row and original SKU or price where the value changed.</p>
+    </article>
+    <article>
+      <h3>Normalise only what is explicit.</h3>
+      <p>SKU punctuation, currency markers, whitespace and case are standardised. 55 rows needed a whitespace or case fix. Product identity, pack size and descriptions are not rewritten.</p>
+    </article>
+    <article>
+      <h3>Merge with a written rule.</h3>
+      <p>Rows are grouped by normalised SKU. The richest row is kept; blanks are filled only from another row with the same SKU. Every removal is logged with both source rows.</p>
+    </article>
+    <article>
+      <h3>Validate before export.</h3>
+      <p>All 250 cleaned SKUs match the synthetic master and all 250 titles are unique. 246 barcodes pass GTIN validation; the four failures are blank and queued. Every ready price has two decimal places.</p>
+    </article>
+    <article>
+      <h3>Stop at uncertainty.</h3>
+      <p>Missing prices, images, brands, categories and invalid barcodes are not guessed. 37 SKUs are held with a next action. The cleaned row remains visible; the platform row is draft or hidden.</p>
+    </article>
+    <article>
+      <h3>Export for the destination.</h3>
+      <p>The Shopify file groups variants under one handle. The BigCommerce file stays one row per SKU. The generic file keeps all 250 records and every review flag.</p>
+    </article>
+  </div>
+</section>
+
+<section class="catalogue-downloads wrap" id="downloads">
+  <span class="section-label">The practical output</span>
+  <h2>Open the work.<br>Check the details.</h2>
+  <p>Start with the workbook for the summary, cleaned catalogue, review queue, change log and duplicate log. Use the CSV files for the cleaned master or a specific import shape.</p>
+  <div class="download-grid supplier-download-grid">
+    <a href="Supplier_Catalogue_Review.xlsx" download><span>Review workbook</span><small>Excel &middot; summary, 250 records, review queue, changes, duplicates and import sheets</small><b aria-hidden="true">&darr;</b></a>
+    <a href="supplier-catalogue-standardised.csv" download><span>Cleaned master</span><small>CSV &middot; all 250 SKUs with source references and review flags</small><b aria-hidden="true">&darr;</b></a>
+    <a href="shopify-import.csv" download><span>Shopify import file</span><small>CSV &middot; 247 rows, 217 handles and grouped variants</small><b aria-hidden="true">&darr;</b></a>
+    <a href="bigcommerce-import.csv" download><span>BigCommerce import file</span><small>CSV &middot; 247 rows with 37 hidden review rows</small><b aria-hidden="true">&darr;</b></a>
+    <a href="supplier-catalogue-evidence.zip" download><span>Source and evidence</span><small>ZIP &middot; raw files, cleaned CSV, import files, workbook, script and validation</small><b aria-hidden="true">&darr;</b></a>
+  </div>
+  <div class="catalogue-limits">
+    <h3>Before a real store import</h3>
+    <p>This is a synthetic sample, not client work. The image URLs, barcodes, prices and product names are fictional. &ldquo;Ready&rdquo; means the row passes the checks shown here, not that a live store will accept it. Test a small batch against the destination platform, confirm missing values with the supplier, and check the current platform schema before scaling up.</p>
+  </div>
+  <p class="source-credit">Built with Python and Excel-compatible CSV/XLSX files. The sample uses no real supplier or customer data. Full rules, source files, validation results and limitations are included in <a href="supplier-catalogue-evidence.zip" download>supplier-catalogue-evidence.zip</a>.</p>
+</section>
+
+<section class="catalogue-next wrap">
+  <div>
+    <span class="section-label">More work</span>
+    <h2>From supplier files<br>to catalogue review.</h2>
+    <p>The other catalogue case study reviews 100 real public product records and shows how missing pack information becomes a source-check queue.</p>
+  </div>
+  <div class="supplier-next-links">
+    <a class="button outline" href="catalogue-case-study.html">View the 100-record review <span aria-hidden="true">&rarr;</span></a>
+    <a class="button outline" href="retail-case-study.html">View the retail analysis <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer wrap">
+  <span>&copy; <span data-year>2026</span> Abdul-Ghaffur Jimoh</span>
+  <a href="mailto:abdulghaffur.jimoh@gmail.com">abdulghaffur.jimoh@gmail.com</a>
+  <a href="index.html#work">Back to selected work</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,337 @@
+﻿sku,field,before,after,rule,source_file,source_row
+NH-TEX-0081,image_url,,https://cdn.example.com/northshore-home/nh-tex-0081.jpg,Duplicate SKU merge: filled a blank field from a duplicate row.,supplier-a.csv,97
+FN-BAT-0023,Price,61.13 GBP,61.13,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,38
+FN-BAT-0027-BLA,Price,£ 54.14,54.14,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,71
+FN-BAT-0027-BLA,Product name,Brass Towel Hook,Brass Towel Hook — Black,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,71
+FN-BAT-0027-OAT,Price,54.14 GBP,54.14,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,29
+FN-BAT-0027-OAT,Product name,Brass Towel Hook,Brass Towel Hook — Oat,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,29
+FN-BAT-0027-SAG,Price,"54,14",54.14,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,31
+FN-BAT-0027-SAG,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,31
+FN-BAT-0027-SAG,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,31
+FN-BAT-0027-SAG,Product name,  Brass Towel Hook  ,Brass Towel Hook — Sage,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,31
+FN-BAT-0031,Price,"41,59",41.59,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,30
+FN-BAT-0035,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,35
+FN-BAT-0035,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,35
+FN-BAT-0182,Price,£ 60.23,60.23,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,37
+FN-BAT-0186,Price,GBP 53.51,53.51,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,36
+FN-BAT-0190,Price,£56.81,56.81,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,47
+FN-BAT-0194,Price,39.89 GBP,39.89,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,66
+FN-BAT-0198,Price,"11,03",11.03,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,51
+FN-BAT-0198,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,51
+FN-BAT-0198,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,51
+FN-DEC-0141,Price,GBP 58.60,58.60,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,15
+FN-DEC-0145,Price,£57.90,57.90,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,25
+FN-DEC-0149,Price,76.49 GBP,76.49,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,84
+FN-DEC-0153,Price,"36,32",36.32,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,78
+FN-DEC-0157,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,95
+FN-DEC-0157,Category,decor,Decor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,95
+FN-KIT-0004,SKU,FN.KIT.0004,FN-KIT-0004,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-a.csv,67
+FN-KIT-0004,Price,"32,41",32.41,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,67
+FN-KIT-0008,Price,GBP 47.80,47.80,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,99
+FN-KIT-0012,Price,£10.01,10.01,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,56
+FN-KIT-0016-BLA,Price,"27,46",27.46,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,60
+FN-KIT-0016-BLA,Product name,Copper Measuring Cups,Copper Measuring Cups — Black,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,60
+FN-KIT-0016-OAT,Price,£ 27.46,27.46,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,57
+FN-KIT-0016-OAT,Product name,Copper Measuring Cups,Copper Measuring Cups — Oat,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,57
+FN-KIT-0016-SAG,Price,GBP 27.46,27.46,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,89
+FN-KIT-0016-SAG,Product name,Copper Measuring Cups,Copper Measuring Cups — Sage,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,89
+FN-KIT-0020,Price,GBP 10.34,10.34,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,94
+FN-KIT-0163,Price,GBP 27.73,27.73,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,58
+FN-KIT-0167,SKU,FN_KIT_0167,FN-KIT-0167,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-c.csv,35
+FN-KIT-0167,Price,£12.91,12.91,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,35
+FN-KIT-0171,Price,14.32 GBP,14.32,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,44
+FN-KIT-0175,Price,"47,76",47.76,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,56
+FN-KIT-0175,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,56
+FN-KIT-0175,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,56
+FN-LIG-0042,Price,£ 26.74,26.74,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,44
+FN-LIG-0046,Price,GBP 70.72,70.72,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,2
+FN-LIG-0050,Price,GBP 107.53,107.53,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,64
+FN-LIG-0054,Price,£44.87,44.87,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,10
+FN-LIG-0058,Price,£ 49.98,49.98,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,93
+FN-LIG-0201,Price,£61.92,61.92,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,63
+FN-LIG-0205,Price,84.13 GBP,84.13,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,15
+FN-LIG-0209,Price,"92,25",92.25,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,32
+FN-LIG-0217,Price,£42.34,42.34,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,10
+FN-OFF-0122,Price,50.85 GBP,50.85,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,66
+FN-OFF-0126-LAR,Price,£ 17.98,17.98,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,38
+FN-OFF-0126-SMA,Price,"8,73",8.73,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,35
+FN-OFF-0130,Price,GBP 19.85,19.85,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,72
+FN-OFF-0134,Price,£46.87,46.87,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,69
+FN-OFF-0134,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,69
+FN-OFF-0134,Category,office,Office,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,69
+FN-OFF-0138,Price,32.26 GBP,32.26,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,50
+FN-OFF-0138,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,50
+FN-OFF-0138,Category,office,Office,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,50
+FN-OUT-0103,Category,outdoor,Outdoor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,97
+FN-OUT-0111,Price,85.63 GBP,85.63,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,81
+FN-OUT-0111,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,81
+FN-OUT-0111,Category,outdoor,Outdoor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,81
+FN-OUT-0115-LAR,Price,£ 66.15,66.15,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,13
+FN-OUT-0115-LAR,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,13
+FN-OUT-0115-LAR,Category,outdoor,Outdoor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,13
+FN-OUT-0115-SMA,Price,"61,23",61.23,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,77
+FN-OUT-0119,Price,GBP 28.37,28.37,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,63
+FN-STO-0061,Price,"10,85",10.85,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,100
+FN-STO-0069,Price,37.60 GBP,37.60,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,26
+FN-STO-0069,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,26
+FN-STO-0069,Category,storage,Storage,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,26
+FN-STO-0073,Price,39.13 GBP,39.13,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,42
+FN-STO-0077,Price,"63,44",63.44,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,7
+FN-STO-0077,Brand,field notes kitchen,Field Notes Kitchen,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,7
+FN-STO-0077,Category,storage,Storage,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,7
+FN-TEX-0084,Price,£74.86,74.86,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,34
+FN-TEX-0088,SKU,fn_tex_0088,FN-TEX-0088,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-b.xlsx,16
+FN-TEX-0088,Price,£ 89.30,89.30,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,16
+FN-TEX-0092,Price,GBP 35.57,35.57,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,10
+FN-TEX-0096,Price,GBP 16.94,16.94,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,12
+FN-TEX-0096,Category,Outdoor,Textiles,Use the product type as the category when the supplier department conflicts.,supplier-b.xlsx,12
+FN-TEX-0100,Price,£78.15,78.15,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,45
+HO-BAT-0021,Price,"22,74",22.74,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,45
+HO-BAT-0033,Price,33.57 GBP,33.57,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,12
+HO-BAT-0037,Price,"26,63",26.63,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,4
+HO-BAT-0184,Price,£52.70,52.70,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,67
+HO-BAT-0184,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,67
+HO-BAT-0184,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,67
+HO-BAT-0188,Price,£ 30.70,30.70,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,33
+HO-BAT-0192-LAR,Price,"44,63",44.63,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,46
+HO-BAT-0192-LAR,Product name,Heritage Woven Laundry Basket,Heritage Woven Laundry Basket — Large,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-c.csv,46
+HO-BAT-0192-SMA,Price,GBP 36.90,36.90,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,53
+HO-BAT-0192-SMA,Product name,Heritage Woven Laundry Basket,Heritage Woven Laundry Basket — Small,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-c.csv,53
+HO-BAT-0200,Price,59.60 GBP,59.60,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,60
+HO-DEC-0143,Price,£ 34.46,34.46,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,8
+HO-DEC-0143,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,8
+HO-DEC-0143,Category,decor,Decor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,8
+HO-DEC-0147,Price,GBP 36.75,36.75,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,37
+HO-DEC-0155,Price,74.92 GBP,74.92,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,40
+HO-DEC-0159-LAR,Price,£ 72.24,72.24,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,96
+HO-DEC-0159-SMA,Price,"67,47",67.47,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,4
+HO-KIT-0002,SKU,HO_KIT_0002,HO-KIT-0002,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-a.csv,15
+HO-KIT-0006,Price,41.8,41.80,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,5
+HO-KIT-0010,Price,£ 42.47,42.47,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,102
+HO-KIT-0010,Category,Textiles,Kitchen,Use the product type as the category when the supplier department conflicts.,supplier-a.csv,102
+HO-KIT-0014,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,16
+HO-KIT-0014,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,16
+HO-KIT-0018,Price,£40.42,40.42,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,55
+HO-KIT-0161,Price,£17.85,17.85,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,57
+HO-KIT-0161,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,57
+HO-KIT-0161,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,57
+HO-KIT-0165,Price,£ 19.63,19.63,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,79
+HO-KIT-0169,SKU,HO.KIT.0169,HO-KIT-0169,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-c.csv,2
+HO-KIT-0169,Price,GBP 40.80,40.80,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,2
+HO-KIT-0177,Price,46.51 GBP,46.51,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,20
+HO-LIG-0044,Price,£78.37,78.37,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,101
+HO-LIG-0048,Price,£ 131.64,131.64,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,92
+HO-LIG-0048,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,92
+HO-LIG-0048,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,92
+HO-LIG-0052,Price,£ 92.11,92.11,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,47
+HO-LIG-0056,Price,GBP 79.78,79.78,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,22
+HO-LIG-0056,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,22
+HO-LIG-0056,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,22
+HO-LIG-0060-BLA,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,84
+HO-LIG-0060-BLA,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,84
+HO-LIG-0060-OAT,Price,GBP 115.08,115.08,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,32
+HO-LIG-0060-SAG,Price,£115.08,115.08,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,90
+HO-LIG-0203-LAR,Price,"84,96",84.96,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,12
+HO-LIG-0203-SMA,Price,GBP 81.75,81.75,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,16
+HO-LIG-0203-SMA,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,16
+HO-LIG-0203-SMA,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,16
+HO-LIG-0207,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,26
+HO-LIG-0207,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,26
+HO-LIG-0211,Price,82.71 GBP,82.71,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,62
+HO-LIG-0215,Price,£ 129.83,129.83,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,17
+HO-LIG-0219,Price,93.91 GBP,93.91,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,6
+HO-OFF-0128,Price,£32.05,32.05,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,98
+HO-OFF-0132,Price,£ 51.57,51.57,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,27
+HO-OFF-0136,Price,GBP 29.64,29.64,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,75
+HO-OUT-0105,Price,83.38 GBP,83.38,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,49
+HO-OUT-0109,Price,"24,43",24.43,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,68
+HO-OUT-0117,Price,£29.23,29.23,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,74
+HO-STO-0063,Price,41.38 GBP,41.38,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,62
+HO-STO-0067,Price,"50,15",50.15,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,105
+HO-STO-0071-BLA,Price,GBP 67.08,67.08,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,65
+HO-STO-0071-OAT,Price,"67,08",67.08,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,9
+HO-STO-0079,Price,30.14 GBP,30.14,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,85
+HO-TEX-0082-BLA,Price,"63,74",63.74,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,8
+HO-TEX-0082-BLA,Product name,Cotton Table Runner,Cotton Table Runner — Black,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,8
+HO-TEX-0082-OAT,Price,£ 63.74,63.74,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,61
+HO-TEX-0082-OAT,Product name,Cotton Table Runner,Cotton Table Runner — Oat,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,61
+HO-TEX-0082-SAG,Price,"63,74",63.74,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,73
+HO-TEX-0082-SAG,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,73
+HO-TEX-0082-SAG,Category,textiles,Textiles,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,73
+HO-TEX-0082-SAG,Product name,  Cotton Table Runner  ,Cotton Table Runner — Sage,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,73
+HO-TEX-0086,SKU,HO-TEX/0086,HO-TEX-0086,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-b.xlsx,33
+HO-TEX-0086,Price,GBP 39.42,39.42,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,33
+HO-TEX-0090,Price,£15.43,15.43,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,82
+HO-TEX-0090,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,82
+HO-TEX-0090,Category,textiles,Textiles,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,82
+HO-TEX-0094,Price,£61.75,61.75,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,54
+HO-TEX-0098,Price,£ 85.34,85.34,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,52
+HO-TEX-0098,Brand,harbor & oak,Harbor & Oak,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,52
+HO-TEX-0098,Category,textiles,Textiles,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,52
+LW-BAT-0022,Price,£ 36.30,36.30,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,103
+LW-BAT-0022,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,103
+LW-BAT-0022,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,103
+LW-BAT-0026,Price,GBP 48.23,48.23,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,3
+LW-BAT-0030,Price,GBP 21.64,21.64,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,39
+LW-BAT-0030,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,39
+LW-BAT-0030,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,39
+LW-BAT-0034,Price,£56.33,56.33,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,78
+LW-BAT-0038-BLA,Price,50.03 GBP,50.03,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,95
+LW-BAT-0038-OAT,Price,£50.03,50.03,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,21
+LW-BAT-0038-OAT,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,21
+LW-BAT-0038-OAT,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,21
+LW-BAT-0038-SAG,Price,£ 50.03,50.03,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,82
+LW-BAT-0181-LAR,Price,"46,95",46.95,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,7
+LW-BAT-0189,Price,22.77 GBP,22.77,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,41
+LW-BAT-0189,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,41
+LW-BAT-0189,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,41
+LW-BAT-0193,Price,£ 13.35,13.35,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,30
+LW-BAT-0193,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,30
+LW-BAT-0193,Category,bathroom,Bathroom,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,30
+LW-BAT-0197,Price,GBP 19.99,19.99,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,3
+LW-DEC-0144,Price,66.22 GBP,66.22,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,9
+LW-DEC-0148-LAR,Price,£ 78.27,78.27,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,36
+LW-DEC-0148-SMA,Price,"74,06",74.06,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,7
+LW-DEC-0148-SMA,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,7
+LW-DEC-0148-SMA,Category,decor,Decor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,7
+LW-DEC-0152,Price,GBP 54.70,54.70,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,55
+LW-DEC-0152,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,55
+LW-DEC-0152,Category,decor,Decor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,55
+LW-DEC-0156,Price,£26.20,26.20,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,24
+LW-DEC-0160,Price,59.53 GBP,59.53,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,28
+LW-KIT-0003,SKU,LW KIT 0003,LW-KIT-0003,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-a.csv,104
+LW-KIT-0003,Price,GBP 36.58,36.58,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,104
+LW-KIT-0011,Price,18.99 GBP,18.99,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,17
+LW-KIT-0166,SKU,lw-kit-0166,LW-KIT-0166,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-c.csv,38
+LW-KIT-0166,Price,14.13 GBP,14.13,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,38
+LW-KIT-0166,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,38
+LW-KIT-0166,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,38
+LW-KIT-0170-LAR,Price,£ 24.59,24.59,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,52
+LW-KIT-0170-LAR,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,52
+LW-KIT-0170-LAR,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,52
+LW-KIT-0170-SMA,Price,"17,44",17.44,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,13
+LW-KIT-0174,Price,GBP 15.94,15.94,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,34
+LW-KIT-0178,Price,£18.16,18.16,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,4
+LW-LIG-0041,Price,"64,84",64.84,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,33
+LW-LIG-0049-BLA,Price,£90.43,90.43,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,87
+LW-LIG-0049-SAG,Price,90.43 GBP,90.43,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,83
+LW-LIG-0053,Price,92.98 GBP,92.98,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,59
+LW-LIG-0057,Price,"138,28",138.28,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,76
+LW-LIG-0204,Price,£ 132.55,132.55,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,42
+LW-LIG-0208,Price,GBP 61.71,61.71,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,27
+LW-LIG-0212,Price,£54.46,54.46,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,29
+LW-LIG-0212,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,29
+LW-LIG-0212,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,29
+LW-LIG-0216,Price,"138,30",138.30,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,22
+LW-LIG-0216,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,22
+LW-LIG-0216,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,22
+LW-LIG-0220,Price,"68,82",68.82,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,18
+LW-OFF-0121,Price,£ 44.47,44.47,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,87
+LW-OFF-0125,Price,GBP 34.26,34.26,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,51
+LW-OFF-0125,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,51
+LW-OFF-0125,Category,office,Office,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,51
+LW-OFF-0129,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,71
+LW-OFF-0129,Category,office,Office,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,71
+LW-OFF-0133,Price,45.38 GBP,45.38,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,3
+LW-OFF-0137-LAR,Price,£ 22.48,22.48,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,46
+LW-OFF-0137-SMA,Price,"19,03",19.03,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,83
+LW-OUT-0106,Price,£63.90,63.90,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,19
+LW-OUT-0106,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,19
+LW-OUT-0106,Category,outdoor,Outdoor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,19
+LW-OUT-0110,Price,£ 23.90,23.90,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,31
+LW-OUT-0114,Price,GBP 90.14,90.14,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,34
+LW-STO-0064,Price,£54.93,54.93,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,19
+LW-STO-0064,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,19
+LW-STO-0064,Category,storage,Storage,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,19
+LW-STO-0068,Price,£ 43.72,43.72,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,6
+LW-STO-0072,Price,£ 36.68,36.68,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,41
+LW-STO-0072,Brand,lumen works,Lumen Works,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,41
+LW-STO-0072,Category,storage,Storage,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,41
+LW-STO-0076,Price,GBP 67.38,67.38,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,50
+LW-STO-0080,Price,£49.45,49.45,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,70
+LW-TEX-0083,Price,54.77 GBP,54.77,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,54
+LW-TEX-0087,SKU,LW-TEX-0087 ,LW-TEX-0087,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-b.xlsx,91
+LW-TEX-0087,Price,"91,60",91.60,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,91
+LW-TEX-0095,Category,Lighting,Textiles,Use the product type as the category when the supplier department conflicts.,supplier-b.xlsx,44
+LW-TEX-0099,Price,25.17 GBP,25.17,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,14
+NH-BAT-0024,Price,£19.18,19.18,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,23
+NH-BAT-0028,Price,£17.67,17.67,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,13
+NH-BAT-0032,Price,£ 24.52,24.52,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,18
+NH-BAT-0036,Price,GBP 22.28,22.28,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,37
+NH-BAT-0040,Price,GBP 57.38,57.38,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,66
+NH-BAT-0183,Price,64.67 GBP,64.67,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,28
+NH-BAT-0187,Price,"49,58",49.58,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,61
+NH-BAT-0195,Price,£26.68,26.68,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,21
+NH-BAT-0199,Price,£ 18.02,18.02,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,49
+NH-DEC-0142,Price,"56,63",56.63,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,76
+NH-DEC-0150,Price,£25.50,25.50,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,42
+NH-DEC-0154,Price,£ 42.79,42.79,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,48
+NH-DEC-0158,Price,GBP 51.96,51.96,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,73
+NH-KIT-0001,SKU,nh-kit-0001,NH-KIT-0001,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-a.csv,81
+NH-KIT-0001,Price,£39,39.00,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,81
+NH-KIT-0001,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,81
+NH-KIT-0001,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,81
+NH-KIT-0005-BLA,Price,47.05 GBP,47.05,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,51
+NH-KIT-0005-BLA,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,51
+NH-KIT-0005-BLA,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,51
+NH-KIT-0005-BLA,Product name,  Glass Carafe  ,Glass Carafe — Black,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,51
+NH-KIT-0005-OAT,Price,£47.05,47.05,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,46
+NH-KIT-0005-OAT,Product name,Glass Carafe,Glass Carafe — Oat,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,46
+NH-KIT-0005-SAG,Price,£ 47.05,47.05,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,77
+NH-KIT-0005-SAG,Product name,Glass Carafe,Glass Carafe — Sage,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-a.csv,77
+NH-KIT-0009,Price,"25,75",25.75,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,98
+NH-KIT-0009,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,98
+NH-KIT-0009,Category,Office,Kitchen,Use the product type as the category when the supplier department conflicts.,supplier-a.csv,98
+NH-KIT-0017,Price,21.21 GBP,21.21,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,58
+NH-KIT-0017,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,58
+NH-KIT-0017,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,58
+NH-KIT-0164,Price,"17,72",17.72,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,17
+NH-KIT-0168,SKU,NH KIT 0168,NH-KIT-0168,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-c.csv,40
+NH-KIT-0172,Price,£21.17,21.17,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,8
+NH-KIT-0176,Price,£ 10.96,10.96,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,5
+NH-KIT-0176,Category,Bathroom,Kitchen,Use the product type as the category when the supplier department conflicts.,supplier-c.csv,5
+NH-KIT-0180,Price,GBP 46.48,46.48,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,58
+NH-KIT-0180,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-c.csv,58
+NH-KIT-0180,Category,kitchen,Kitchen,Trim and collapse whitespace; restore the canonical category spelling.,supplier-c.csv,58
+NH-LIG-0043,Price,129.76 GBP,129.76,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,86
+NH-LIG-0043,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,86
+NH-LIG-0043,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,86
+NH-LIG-0047,Price,"80,38",80.38,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,49
+NH-LIG-0051,Price,"55,52",55.52,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,69
+NH-LIG-0051,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-a.csv,69
+NH-LIG-0051,Category,lighting,Lighting,Trim and collapse whitespace; restore the canonical category spelling.,supplier-a.csv,69
+NH-LIG-0059,Price,81.57 GBP,81.57,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,14
+NH-LIG-0206,Price,£94.15,94.15,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,23
+NH-LIG-0210,Price,£ 42.08,42.08,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,9
+NH-LIG-0214-LAR,Price,"120,10",120.10,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,31
+NH-LIG-0214-LAR,Product name,Coastal Rattan Table Lamp,Coastal Rattan Table Lamp — Large,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-c.csv,31
+NH-LIG-0214-SMA,Price,GBP 115.20,115.20,Parse GBP formats; standardise to two decimal places.,supplier-c.csv,19
+NH-LIG-0214-SMA,Product name,Coastal Rattan Table Lamp,Coastal Rattan Table Lamp — Small,Trim and collapse whitespace; restore title case; disambiguate duplicate titles.,supplier-c.csv,19
+NH-OFF-0123,Price,£42.32,42.32,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,65
+NH-OFF-0127,Price,9.30 GBP,9.30,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,62
+NH-OFF-0131,Price,"42,59",42.59,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,59
+NH-OFF-0139,Price,£23.18,23.18,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,5
+NH-OUT-0104-BLA,Price,"130,72",130.72,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,92
+NH-OUT-0104-OAT,Price,£ 130.72,130.72,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,23
+NH-OUT-0104-SAG,Price,GBP 130.72,130.72,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,47
+NH-OUT-0108,Price,GBP 48.69,48.69,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,94
+NH-OUT-0112,Price,£113.16,113.16,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,64
+NH-OUT-0116,Price,138.16 GBP,138.16,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,85
+NH-OUT-0120,Price,"60,60",60.60,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,6
+NH-OUT-0120,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,6
+NH-OUT-0120,Category,outdoor,Outdoor,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,6
+NH-STO-0062,Price,£ 14.20,14.20,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,43
+NH-STO-0066,Price,GBP 20.11,20.11,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,107
+NH-STO-0070,Price,£53.22,53.22,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,20
+NH-STO-0074,Price,£59.95,59.95,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,68
+NH-STO-0078,Price,£ 56.24,56.24,Parse GBP formats; standardise to two decimal places.,supplier-a.csv,52
+NH-TEX-0085,SKU,NH--TEX--0085,NH-TEX-0085,"Uppercase; replace spaces, underscores, dots and slashes with hyphens; collapse repeats; trim.",supplier-b.xlsx,39
+NH-TEX-0085,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,39
+NH-TEX-0085,Category,textiles,Textiles,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,39
+NH-TEX-0089,Price,37.99 GBP,37.99,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,32
+NH-TEX-0093-BLA,Price,£ 63.67,63.67,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,93
+NH-TEX-0093-OAT,Price,63.67 GBP,63.67,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,53
+NH-TEX-0093-OAT,Brand,northshore home,Northshore Home,Trim and collapse whitespace; restore the canonical brand spelling.,supplier-b.xlsx,53
+NH-TEX-0093-OAT,Category,textiles,Textiles,Trim and collapse whitespace; restore the canonical category spelling.,supplier-b.xlsx,53
+NH-TEX-0093-SAG,Price,"63,67",63.67,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,22
+NH-TEX-0097,Price,"58,06",58.06,Parse GBP formats; standardise to two decimal places.,supplier-b.xlsx,61
